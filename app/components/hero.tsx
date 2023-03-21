@@ -8,7 +8,7 @@ export default function hero() {
     })
     return (
         <>
-            <div className="bg-[url('/images/hero-bg.webp')] bg-cover bg-center text-center h-[250px] bg-no-repeat">
+            <div className="bg-[url('/images/hero-bg.webp')] bg-cover bg-center text-center h-[292px] sm:h-[250px] bg-no-repeat">
                 <h1 className='text-5xl pt-[55px] font-extrabold text-white'>Hi, I'm  <span className='text-[#433d6f]'>Wasif</span></h1>
                 <h1 className='pt-[50px] text-white font-bold text-4xl'>
                     I'm

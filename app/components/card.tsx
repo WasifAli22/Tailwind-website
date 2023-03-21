@@ -1,15 +1,16 @@
 import React from 'react'
 
-export default function Card1() {
+export default function Card({ imageSrc, title }: { imgSrc: any, title: string }) {
     return (
         <>
-            <div className="rounded-md shadow-md bg-[#151030] dark:text-gray-100">
+            <div className="rounded-md shadow-md bg-[#151030] text-white ml-4 mb-4">
                 <div className="flex items-center justify-between p-3">
                     <div className="flex items-center space-x-2">
                         <img src="https://source.unsplash.com/50x50/?portrait" alt="" className="object-cover object-center w-8 h-8 rounded-full shadow-sm dark:bg-gray-500 dark:border-gray-700" />
                         <div className="-space-y-1">
                             <h2 className="text-sm font-semibold leading-none">Wasif Shahid</h2>
-                            <span className="inline-block text-xs leading-none dark:text-gray-400">wasifali22</span>
+                            <span className="inline-block text-xs leading-none dark:text-gray-400">wasifali22
+                            </span>
                         </div>
                     </div>
                     <button title="Open options" type="button">
@@ -20,7 +21,7 @@ export default function Card1() {
                         </svg>
                     </button>
                 </div>
-                <img src="/images/backend.webp" alt="" className="object-cover object-center w-full h-[140px] dark:bg-gray-500" />
+                <img src={imageSrc} alt="" className="object-cover object-center w-full h-[140px] dark:bg-gray-500" />
                 <div className="p-3">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
@@ -54,7 +55,7 @@ export default function Card1() {
                                 <img alt="" className="w-5 h-5 border rounded-full dark:bg-gray-500 dark:border-gray-800" src="https://source.unsplash.com/40x40/?portrait?3" />
                             </div>
                             <span className="text-sm ml-[15px]">Liked by
-                                <span className="font-semibold"> Adil Altaf </span>and
+                                <span className="font-semibold"> {title}</span>and
                                 <span className="font-semibold"> 86 others</span>
                             </span>
                         </div>
