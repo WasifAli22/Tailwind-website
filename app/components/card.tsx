@@ -1,9 +1,10 @@
 import React from 'react'
+import { instaCard } from '@/constants'
 
 export default function Card({ imageSrc, title }: { imgSrc: any, title: string }) {
     return (
         <>
-            <div className="rounded-md shadow-md bg-[#151030] text-white ml-4 mb-4">
+            <div className="rounded-md col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 xl:mt-5 shadow-md bg-[#151030] text-white ml-4 md:mt-0 mt-5 md:mb-4">
                 <div className="flex items-center justify-between p-3">
                     <div className="flex items-center space-x-2">
                         <img src="https://source.unsplash.com/50x50/?portrait" alt="" className="object-cover object-center w-8 h-8 rounded-full shadow-sm dark:bg-gray-500 dark:border-gray-700" />

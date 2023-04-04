@@ -3,7 +3,7 @@ export default function projects() {
     return (
         <>
             <section className="text-white bg-[#050716]" id='work'>
-                <div className="container py-10 lg:px-[6rem] px-3">
+                <div className="container pt-10 pb-16 lg:px-[6rem] px-3">
                     <h1 className="text-5xl font-extrabold capitalize">explore My awesome Work</h1>
                     <p className="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
                         I have completed many projects for my customers.
