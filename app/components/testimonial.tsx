@@ -1,16 +1,14 @@
 import React from 'react'
-
+import Image from 'next/image'
 export default function testimonial({ name, description }: { name: string, description: string }) {
     return (
         <div className="text-white col-span-12 md:col-span-4 lg:col-span-4 my-2 md:my-12 bg-[#050716]">
             <blockquote className="rounded-lg bg-gray-100 p-8 h-[280px]">
                 <div className="flex items-center gap-4">
-                    <img
-                        alt="Man"
-                        src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                        className="h-16 w-16 rounded-full object-cover"
-                    />
-
+                    <div style={{ height: "64px", width: "64px", position: "relative" }}>
+                        <Image layout="fill" alt="Man"
+                            src="/testi-img.jpg" className="rounded-full object-cover" />
+                    </div>
                     <div>
                         <div className="flex justify-center gap-0.5 text-green-500">
                             <svg

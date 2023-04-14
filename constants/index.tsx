@@ -1,19 +1,19 @@
 // Instagram Crads
 export const instaCard = [
     {
-        imageSrc: '/images/backend.webp',
+        imgSrc: '/images/backend.webp',
         title: 'Daniyal Nagori ',
     },
     {
-        imageSrc: '/images/nextjs.png',
+        imgSrc: '/images/nextjs.png',
         title: 'Zia Khan ',
     },
     {
-        imageSrc: '/images/react.png',
+        imgSrc: '/images/react.png',
         title: 'Adil Altaf ',
     },
     {
-        imageSrc: '/images/web-deve.png',
+        imgSrc: '/images/web-deve.png',
         title: 'Zeeshan Hanif ',
     },
 ];
